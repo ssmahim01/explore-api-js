@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        .heading-content{
+            padding: 5% 0;
+        }
+        .heading{
+           text-align: center;
+           font-weight: bold;
+        }
+        .btn-container{
+            width: 10%;
+            margin: 0 auto;
+        }
+        .load-btn{
+            font-weight: 900;
+            padding: 0.8rem 1rem;
+            border-radius: 0.7rem;
+            background-color: chartreuse;
+            border: none;
+            cursor: pointer;
+        }
+        .container-styles{
+            width: 60%;
+            margin: 0 auto;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1.4rem;
+            background-color: gainsboro;
+            box-shadow: 5px 10px 15px rgba(117, 117, 117, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Photos heading with button and a container -->
+
+    <header class="heading-content">
+        <h1 class="heading">Load all Photos</h1>
+        <div class="btn-container">
+            <button onclick="loadPhotos()" class="load-btn">Load Photos</button>
+        </div>
+    </header>
+
+    <main>
+
+        <div>
+            <ul id="photos-container">
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="photos.js"></script>
+</body>
+</html>
